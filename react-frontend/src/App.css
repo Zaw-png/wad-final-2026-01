@@ -1,0 +1,165 @@
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f7fb;
+    color: #1e293b;
+  }
+  
+  button, input, textarea, select {
+    font: inherit;
+  }
+  
+  button {
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    background: #2563eb;
+    color: white;
+    padding: 11px 18px;
+    font-weight: 600;
+  }
+  
+  button:hover {
+    opacity: 0.9;
+  }
+  
+  button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
+  .header {
+    background: #1e3a8a;
+    color: white;
+    padding: 24px max(24px, calc((100% - 1100px) / 2));
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .header h1 {
+    margin: 0 0 6px;
+  }
+  
+  .header p {
+    margin: 0;
+    color: #dbeafe;
+  }
+  
+  .user-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .container {
+    max-width: 1100px;
+    margin: 32px auto;
+    padding: 0 20px;
+  }
+  
+  .panel, .course-card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.06);
+    margin-bottom: 24px;
+  }
+  
+  .auth-panel {
+    max-width: 460px;
+    margin: 0 auto 35px;
+  }
+  
+  .panel h2 {
+    margin-top: 0;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+  }
+  
+  input, textarea, select {
+    width: 100%;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    padding: 12px;
+    background: white;
+    color: #1e293b;
+  }
+  
+  textarea {
+    min-height: 100px;
+    resize: vertical;
+  }
+  
+  .secondary {
+    background: #64748b;
+  }
+  
+  .danger {
+    background: #dc2626;
+  }
+  
+  .link-button {
+    background: transparent;
+    color: #2563eb;
+    padding-left: 0;
+    margin-top: 15px;
+  }
+  
+  .notice {
+    padding: 15px;
+    background: #dbeafe;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .section-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .course-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+  }
+  
+  .course-card {
+    margin: 0;
+  }
+  
+  .course-card h3 {
+    margin-top: 0;
+    color: #1d4ed8;
+  }
+  
+  .course-card p {
+    line-height: 1.6;
+  }
+  
+  .actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  @media (max-width: 600px) {
+    .header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  
