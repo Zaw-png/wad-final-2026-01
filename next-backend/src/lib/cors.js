@@ -4,11 +4,10 @@ const corsHeaders = {
   "Access-Control-Allow-Origin":
     process.env.NODE_ENV === "development"
       ? "http://localhost:5173"
-      : "https://wad-final-2026-01-l1mw.vercel.app",
+      : "https://wad-final-2026-01-q6hj.vercel.app",
   "Access-Control-Allow-Methods": "GET, POST, PUT, PATCH, DELETE, OPTIONS",
   "Access-Control-Allow-Headers": "Content-Type, Authorization",
   "Access-Control-Max-Age": "86400",
 };
 
 export default corsHeaders;
-
