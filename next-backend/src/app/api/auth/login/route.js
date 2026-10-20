@@ -62,10 +62,12 @@ export async function POST(request) {
       { status: 200, headers: corsHeaders }
     );
 
+    const isProduction = process.env.NODE_ENV === "production";
+
     response.cookies.set("token", token, {
       httpOnly: true,
-      secure: process.env.NODE_ENV === "production",
-      sameSite: "lax",
+      secure: isProduction,
+      sameSite: isProduction ? "none" : "lax",
       path: "/",
       maxAge: 60 * 60 * 24,
     });
